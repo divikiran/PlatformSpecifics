@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="ss1" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlatformFormSpecificsTest.StatusBarPage">
+    <ContentPage.Content>
+        <Button Text="click me" Clicked="Handle_Clicked"/>
+    </ContentPage.Content>
+</ContentPage>

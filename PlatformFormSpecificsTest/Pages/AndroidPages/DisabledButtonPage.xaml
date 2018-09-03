@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Disabled Button and shadow" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" x:Class="PlatformFormSpecificsTest.DisabledButtonPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Button" TextColor="Blue" BackgroundColor="Bisque" IsEnabled="{Binding IsEnabled}" />
+            <Button Text="Button" TextColor="Blue" BackgroundColor="Bisque" IsEnabled="{Binding IsEnabled}" android:VisualElement.IsLegacyColorModeEnabled="False" />
+            <Button Text="Toggle" TextColor="Blue" BackgroundColor="Bisque" Clicked="Handle_Clicked" android:Button.UseDefaultPadding="true"
+                android:Button.UseDefaultShadow="true"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

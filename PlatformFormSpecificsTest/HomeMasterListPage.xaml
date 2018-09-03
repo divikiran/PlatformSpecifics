@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PlatformFormSpecificsTest;assembly=PlatformFormSpecificsTest" x:Class="PlatformFormSpecificsTest.HomeMasterListPage" Padding="0,40,0,0" Title="Master">
+    <!--Icon="hamburger.png" -->
+    <ContentPage.Content>
+        <ListView x:Name="listviewitems" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="iOS" TargetType="{x:Type local:BlankPage}" />
+                    <local:MasterPageItem Title="Blur Effect" TargetType="{x:Type local:BlurEffect}" />
+                    <local:MasterPageItem Title="Large Titles" TargetType="{x:Type local:LargerTitlePage}" />
+                    <local:MasterPageItem Title="Safe Area" TargetType="{x:Type local:SafeAreaPage}" />
+                    <local:MasterPageItem Title="Translucent Bar" TargetType="{x:Type local:TranslucentPage}" />
+                    <local:MasterPageItem Title="Font Size" TargetType="{x:Type local:FontSizePage}" />
+                    <local:MasterPageItem Title="Picker" TargetType="{x:Type local:PickerItemPage}" />
+                    <local:MasterPageItem Title="Status Bar" TargetType="{x:Type local:StatusBarPage}" />
+                    <local:MasterPageItem Title="Scroll Delay" TargetType="{x:Type local:ScrollViewDelayPage}" />
+                    <local:MasterPageItem Title="Listview seperator" TargetType="{x:Type local:ListViewSeperatorPage}" />
+                    <local:MasterPageItem Title="Legacy Color" TargetType="{x:Type local:LegacyColorModePage}" />
+                    <local:MasterPageItem Title="Android" TargetType="{x:Type local:BlankPage}" />
+                    <local:MasterPageItem Title="Soft keyboard" TargetType="{x:Type local:SoftkeyboardPage}" />
+                    <local:MasterPageItem Title="ListView FastScroll" TargetType="{x:Type local:ListViewFastScrollPage}" />
+                    <local:MasterPageItem Title="Tabbed page swiping" TargetType="{x:Type local:TabbedSwipePage}" />
+                    <local:MasterPageItem Title="Elevation" TargetType="{x:Type local:ElevationPage}" />
+                    <local:MasterPageItem Title="Page lifecycle" TargetType="{x:Type local:PageLifeCyclePage}" />
+                    <local:MasterPageItem Title="Entry Methods" TargetType="{x:Type local:EntryInputButtonPage}" />
+                    <local:MasterPageItem Title="Button Disabled" TargetType="{x:Type local:DisabledButtonPage}" />
+                    <local:MasterPageItem Title="Bottom tabbed" TargetType="{x:Type local:BottomTabbedPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

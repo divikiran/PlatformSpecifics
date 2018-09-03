@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Tabbed" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlatformFormSpecificsTest.Pages.PSTabbedPage">
+         <ContentPage Title="Home" BackgroundColor="Teal">
+        <Label Text="Home" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    </ContentPage>
+
+    <ContentPage Title="Search" BackgroundColor="Silver">
+        <Label Text="Search" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    </ContentPage>
+
+    <ContentPage Title="About" BackgroundColor="Purple">
+        <Label Text="About" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    </ContentPage>
+</TabbedPage>

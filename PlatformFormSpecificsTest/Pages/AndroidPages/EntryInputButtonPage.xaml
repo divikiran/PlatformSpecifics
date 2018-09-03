@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Entry" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" x:Class="PlatformFormSpecificsTest.EntryInputButtonPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="None" />
+            <Entry x:Name="eSend" Text="Send" android:Entry.ImeOptions="Go" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

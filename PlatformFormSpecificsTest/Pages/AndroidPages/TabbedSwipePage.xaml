@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.OffscreenPageLimit="2"
+            android:TabbedPage.IsSwipePagingEnabled="true" 
+            Title="Tabbed swipe"
+            x:Class="PlatformFormSpecificsTest.TabbedSwipePage">
+    <ContentPage Title="Tab 1">
+        <Label Text="Tab 1" />
+    </ContentPage>
+    <ContentPage Title="Tab 2">
+        <Label Text="Tab 2" />
+    </ContentPage>
+    <ContentPage Title="Tab 3">
+        <Label Text="Tab 3" />
+    </ContentPage>
+    <ContentPage Title="Tab 4">
+        <Label Text="Tab 4" />
+    </ContentPage>
+    <ContentPage Title="Tab 5">
+        <Label Text="Tab 5" />
+    </ContentPage>
+    <ContentPage Title="Tab 6">
+        <Label Text="Tab 6" />
+    </ContentPage>
+</TabbedPage>

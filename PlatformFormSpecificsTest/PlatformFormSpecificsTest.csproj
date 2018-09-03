@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\AndroidPages\" />
+    <Folder Include="Pages\iOSPages\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\KittyCake.jpg" />
+    <None Remove="Images\hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\KittyCake.jpg" />
+    <EmbeddedResource Include="Images\hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pages\iOSPages\FontSizePage.cs" />
+  </ItemGroup>
+</Project>

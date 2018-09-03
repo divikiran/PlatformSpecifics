@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Visibility" x:Class="PlatformFormSpecificsTest.StatusBarPage2">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="tes"/>
+            <Button TextColor="Black" Clicked="Handle_Clicked" Text="Toggle 1" />
+            <Button TextColor="Black" Clicked="Handle_Clicked_1" Text="Toggle 2" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

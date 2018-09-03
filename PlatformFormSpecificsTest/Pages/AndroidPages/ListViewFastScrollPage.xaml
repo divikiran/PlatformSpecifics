@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Fast scroll" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" x:Class="PlatformFormSpecificsTest.ListViewFastScrollPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Toggle Fastscroll" Clicked="Handle_Clicked" />
+            <ListView x:Name="listview" ItemsSource="{Binding Numbers}" android:ListView.IsFastScrollEnabled="true">
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

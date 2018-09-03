@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Blur Effect" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:local="clr-namespace:PlatformFormSpecificsTest.Extensions;assembly=PlatformFormSpecificsTest" 
+             x:Class="PlatformFormSpecificsTest.BlurEffect"
+             ios:Page.LargeTitleDisplay="Never">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical">
+        <StackLayout>
+            <Image Source="{local:ImageResource PlatformFormSpecificsTest.Images.KittyCake.jpg}" HeightRequest="50" WidthRequest="50" />
+        </StackLayout>
+        <AbsoluteLayout>
+            <Image Source="{local:ImageResource PlatformFormSpecificsTest.Images.KittyCake.jpg}" HeightRequest="50" WidthRequest="50" />
+            <!--<BoxView x:Name="boxView" ios:VisualElement.BlurEffect="Dark" HeightRequest="50" WidthRequest="50" />-->
+            <BoxView x:Name="box1" ios:VisualElement.BlurEffect="Dark" HeightRequest="50" WidthRequest="50" />
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="{local:ImageResource PlatformFormSpecificsTest.Images.KittyCake.jpg}" HeightRequest="50" WidthRequest="50" />
+            <BoxView x:Name="box2" ios:VisualElement.BlurEffect="Light" HeightRequest="50" WidthRequest="50" />
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="{local:ImageResource PlatformFormSpecificsTest.Images.KittyCake.jpg}" HeightRequest="50" WidthRequest="50" />
+            <BoxView x:Name="box3" ios:VisualElement.BlurEffect="ExtraLight" HeightRequest="50" WidthRequest="50" />
+        </AbsoluteLayout>
+    </StackLayout>
+</ContentPage>
