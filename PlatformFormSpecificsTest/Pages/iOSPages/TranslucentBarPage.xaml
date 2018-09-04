@@ -2,7 +2,9 @@
 <NavigationPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
                 Title="Translucent Bar"
                 xmlns:local="clr-namespace:PlatformFormSpecificsTest;assembly=PlatformFormSpecificsTest" 
-                x:Class="PlatformFormSpecificsTest.TranslucentBarPage">
+                x:Class="PlatformFormSpecificsTest.TranslucentBarPage" BackgroundColor="Purple" 
+                xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                ios:NavigationPage.IsNavigationBarTranslucent="true">
      <x:Arguments>
         <local:TranslucentPage Title="Page 2"/>
     </x:Arguments>

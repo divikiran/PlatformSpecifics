@@ -4,7 +4,7 @@
              x:Class="PlatformFormSpecificsTest.TranslucentPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
-            <Button Text="Click me"/>
+            <Button x:Name="button" Text="Click me" Clicked="Handle_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

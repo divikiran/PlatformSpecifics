@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+
 
 namespace PlatformFormSpecificsTest
 {
@@ -16,12 +19,12 @@ namespace PlatformFormSpecificsTest
 
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as MasterPageItem;
-            if (item != null)
+            if (e.SelectedItem is MasterPageItem item)
             {
                 var page = (Xamarin.Forms.Page)Activator.CreateInstance(item.TargetType);
-                //page.On<iOS>().EnableTranslucentNavigationBar();
-                //page.On<iOS>().SetPrefersLargeTitles(true);
+                //var nav = new Xamarin.Forms.NavigationPage(page);
+                //nav.On<iOS>().EnableTranslucentNavigationBar();
+                //nav.On<iOS>().SetPrefersLargeTitles(true);
 
                 App.Current.MainPage.Navigation.PushAsync(page);
 

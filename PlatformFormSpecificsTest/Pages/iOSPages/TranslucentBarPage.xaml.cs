@@ -36,6 +36,7 @@ namespace PlatformFormSpecificsTest
             
         //    if (App.Current.MainPage is Xamarin.Forms.NavigationPage)
         //    {
+        //        (App.Current.MainPage as Xamarin.Forms.NavigationPage).BackgroundColor = Color.Blue;
         //        (App.Current.MainPage as Xamarin.Forms.NavigationPage).On<iOS>().SetIsNavigationBarTranslucent(true);
         //    }
 

@@ -1,16 +1,22 @@
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PlatformFormSpecificsTest
 {
-    public partial class App : Application
+    public partial class App : Xamarin.Forms.Application
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HomeMasterListPage());
+            Xamarin.Forms.NavigationPage navigationPage = new Xamarin.Forms.NavigationPage(new HomeMasterListPage());
+            //navigationPage.On<iOS>().SetPrefersLargeTitles(true);
+            //navigationPage.BackgroundColor = Color.Red;
+            //navigationPage.On<iOS>().EnableTranslucentNavigationBar();
+            MainPage = navigationPage;
         }
 
         protected override void OnStart()
